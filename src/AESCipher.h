@@ -34,6 +34,14 @@ class AESCipher {
 
 		VOID CreateState (UBYTE * input, UBYTE * output);
 
+		// Shift rows state
+
+		VOID ShiftRows(UBYTE * input, UBYTE * output);
+
+		// Substitute the bytes of array
+
+		VOID SubBytes(UBYTE * input, UBYTE * output);
+
 };
 
 #endif /* AESCIPHER_H_ */

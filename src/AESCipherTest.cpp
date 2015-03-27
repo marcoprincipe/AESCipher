@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "AESCipher.h"
 #include "Utils.h"
 
@@ -9,6 +10,14 @@ int main() {
 	AESCipher * cipher = new AESCipher();
 
 	cipher->CreateState(input, output);
+
+	Utils::PrintState(output);
+
+	cipher->ShiftRows(output, output);
+
+	Utils::PrintState(output);
+
+	cipher->SubBytes(output, output);
 
 	Utils::PrintState(output);
 

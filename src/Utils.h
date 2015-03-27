@@ -26,6 +26,26 @@ class Utils {
 
 		static VOID PrintState(UBYTE * state);
 
+		// Create a uword from byte array
+
+		static UWORD UBytesToUWord(UBYTE * bytes);
+
+		// Create a byte array from uword
+
+		static VOID UWordToUBytes(UWORD uword, UBYTE * bytes);
+
+		// Rotate a uword to right
+
+		static UWORD RotateRight(UWORD uword, INT times);
+
+		// Rotate a uword to left
+
+		static UWORD RotateLeft(UWORD uword, INT times);
+
+		// Get the ubyte from sbox table
+
+		static UBYTE GetUByteFromSBox(UBYTE ubyte);
+
 };
 
 #endif /* UTILS_H_ */

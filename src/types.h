@@ -19,6 +19,9 @@ typedef unsigned char UBYTE;
 typedef int INT;
 typedef unsigned int UINT;
 
+typedef int WORD;
+typedef unsigned int UWORD;
+
 typedef long LONG;
 typedef unsigned long ULONG;
 

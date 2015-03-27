@@ -1,12 +1,5 @@
-//============================================================================
-// Name        : AESCipher.cpp
-// Author      : Marco Aurelio Principe Goncalves
-// Version     :
-// Copyright   : Your copyright notice
-// Description : Hello World in C++, Ansi-style
-//============================================================================
-
 #include "AESCipher.h"
+#include "Utils.h"
 
 int main() {
 
@@ -17,8 +10,12 @@ int main() {
 
 	cipher->CreateState(input, output);
 
+	Utils::PrintState(output);
+
 	if (cipher) {
+
 		delete cipher;
+
 	}
 
 }
